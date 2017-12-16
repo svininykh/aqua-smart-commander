@@ -1,5 +1,6 @@
 package io.hackaday.raspiaqua.smartapp;
 
+import io.hackaday.raspiaqua.proto.Aquarium;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import eu.hansolo.tilesfx.Tile;
 import eu.hansolo.tilesfx.tools.FlowGridPane;
@@ -17,10 +18,10 @@ public class MainApp extends Application {
 
     private static final double TILE_SIZE = 150;
     private final ResourceBundle bundle = ResourceBundle.getBundle("bundles.UILocales");
-    private final AquaDevice light = new AquaDevice(bundle, TILE_SIZE, TILE_SIZE / 2);
-    private final AquaDevice compressor = new AquaDevice(bundle, TILE_SIZE, TILE_SIZE / 2);
-    private final AquaDevice heater = new AquaDevice(bundle, TILE_SIZE, TILE_SIZE / 2);
-    private final AquaDevice filter = new AquaDevice(bundle, TILE_SIZE, TILE_SIZE / 2);
+    private final AquaDeviceTile light = new AquaDeviceTile(bundle, TILE_SIZE, TILE_SIZE / 2);
+    private final AquaDeviceTile compressor = new AquaDeviceTile(bundle, TILE_SIZE, TILE_SIZE / 2);
+    private final AquaDeviceTile heater = new AquaDeviceTile(bundle, TILE_SIZE, TILE_SIZE / 2);
+    private final AquaDeviceTile filter = new AquaDeviceTile(bundle, TILE_SIZE, TILE_SIZE / 2);
 
     @Override
     public void init() {

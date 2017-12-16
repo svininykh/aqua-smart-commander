@@ -1,0 +1,28 @@
+package io.hackaday.raspiaqua.proto;
+
+option optimize_for = SPEED;
+
+message MessagePacket {
+    required string server_name = 1;
+    required string client_name = 2;
+    repeated AquaDevice devices = 3;
+}
+
+message AquaDevice {
+    enum Equipment {
+        LIGHT = 1;
+        COMPRESSOR = 2;
+        HEATER = 3;
+        FILTER = 4;
+    }
+    message Condition {
+        enum Status {
+            OFF = 0;
+            ON = 1;
+        }
+        required Status status = 1;
+    }
+
+    required Equipment equipment_type = 1;
+    required Condition condition = 2;
+}

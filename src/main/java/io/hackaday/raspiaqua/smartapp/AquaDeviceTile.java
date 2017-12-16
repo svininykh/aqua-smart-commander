@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
  *
  * @author svininykh-av
  */
-public class AquaDevice {
+public class AquaDeviceTile {
 
     private final ResourceBundle bundle;
     private final double tileWidth;
@@ -22,7 +22,7 @@ public class AquaDevice {
 
     private FontAwesomeIconView iconView;
 
-    public AquaDevice(ResourceBundle bundle, double tileWidth, double tileHeight) {
+    public AquaDeviceTile(ResourceBundle bundle, double tileWidth, double tileHeight) {
         this.bundle = bundle;
         this.tileWidth = tileWidth;
         this.tileHeight = tileHeight;
