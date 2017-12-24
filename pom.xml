@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.hackaday.raspiaqua</groupId>
-    <artifactId>aqua-smart-commander</artifactId>
+    <artifactId>aqua-tiles-commander</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>aqua-smart-commander</name>
+    <name>aqua-tiles-commander</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -102,18 +102,6 @@
                     </additionalClasspathElements>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>com.github.igor-petruk.protobuf</groupId>
-                <artifactId>protobuf-maven-plugin</artifactId>
-                <version>0.6.5</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>            
         </plugins>
     </build>
     <dependencies>
@@ -123,29 +111,9 @@
             <version>1.5.2</version>
         </dependency>
         <dependency>
-            <groupId>com.jfoenix</groupId>
-            <artifactId>jfoenix</artifactId>
-            <version>1.11.1</version>
-        </dependency>
-        <dependency>
             <groupId>de.jensd</groupId>
             <artifactId>fontawesomefx</artifactId>
             <version>8.9</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.protobuf</groupId>
-            <artifactId>protobuf-java</artifactId>
-            <version>2.5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-transport</artifactId>
-            <version>4.1.18.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-codec</artifactId>
-            <version>4.1.18.Final</version>
         </dependency>
     </dependencies>
     <repositories>

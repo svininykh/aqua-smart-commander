@@ -1,6 +1,5 @@
 package io.hackaday.raspiaqua.smartapp;
 
-import io.hackaday.raspiaqua.proto.Aquarium;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import eu.hansolo.tilesfx.Tile;
 import eu.hansolo.tilesfx.tools.FlowGridPane;
